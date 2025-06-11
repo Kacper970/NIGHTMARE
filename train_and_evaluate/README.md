@@ -5,7 +5,7 @@ In the folder **Example_JOBS_Snellius** example jobs are found that were used fo
 The files **data.py**, **models.py**, **utils.py** and **vison_transformer** are the same for all models. The other folders here have model specific files that need to be used when using those models. Here below we explain any additional steps that need to be taken into account when using those files. Each of the model folders has three files: the **engine.py** used for the main loops, **training.py** file used for training and a **evaluate_retrieval.py** used for evaluation. (When there is no training involved the training.py file is not included)
 
 
-The headers correspond to the names of the models as can be found in the thesis' tables. Checkpoints also have such names.
+The headers below correspond to the names of the models as can be found in the thesis' tables. Checkpoints also have such names.
 
 
 ### ASTERX (Image Only) 
