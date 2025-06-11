@@ -5,4 +5,5 @@ In the folder **train_and_evaluate** all the necessary code to train and evaluat
 In the folder **inference_data** all the necessary code to generate the data files can be found.
 
 The checkpoints and already generated data files can be downloaded from a google drive:
-(LINK TO BE INSERTED)
+
+https://drive.google.com/drive/folders/1Uoo_w4k2zFH9PbidJIjL3lKZklMWIljL?usp=drive_link
