@@ -30,10 +30,10 @@ The files can be used without additional steps according to the job files in the
 
 ### ASTERX (Multimodal, Combiner) & ASTERX (Multimodal, FNN-Based)  
 
-For using ASTERX (Multimodal, Combiner):/
+For using ASTERX (Multimodal, Combiner):\
 use the line: combiner = SequenceCombiner(384, 768, 384) and comment out: combiner = Combinerpaper(384, 768, 384)
   
-For using ASTERX (Multimodal, FNN-Based):/
+For using ASTERX (Multimodal, FNN-Based):\
 use the line: combiner = Combinerpaper(384, 768, 384) and comment out: combiner = SequenceCombiner(384, 768, 384)
 
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
@@ -51,7 +51,7 @@ The files can be used without additional steps according to the job files in the
 
 ### Pretrained Clip (Multimodal) & Pretrained BertDino (Multimodal)  
 
-When using Dino and Bert embeddings use the data folder: data_better_text/
+When using Dino and Bert embeddings use the data folder: data_better_text\
 When using Clip embeddings use the data folder: data_clip_better
 
 Apply this change in the file evaluation_retrieval.py
@@ -59,7 +59,7 @@ Apply this change in the file evaluation_retrieval.py
 
 ### Pretrained Clip (Image Only) & Pretrained BertDino (Image Only) 
 
-When using Dino and Bert embeddings use the data folder: data_better_text/
+When using Dino and Bert embeddings use the data folder: data_better_text\
 When using Clip embeddings use the data folder: data_clip_better
 
 Apply this change in the file evaluation_retrieval.py
@@ -67,10 +67,10 @@ Apply this change in the file evaluation_retrieval.py
 
 ### NIGHTMARE, (Single Digit Condition) & NIGHTMARE, (Element Wise Condition)
 
-For using : NIGHTMARE, (Single Digit Condition)/
+For using : NIGHTMARE, (Single Digit Condition)\
 use **feature_dim = 1**
 
-For using : NIGHTMARE, (Element Wise Condition)/
+For using : NIGHTMARE, (Element Wise Condition)\
 use **feature_dim = 384**
 
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
@@ -88,13 +88,13 @@ The files can be used without additional steps according to the job files in the
 
 ### NIGHTMARE, (3 Channels) & NIGHTMARE, (3 Channels, Double Cross Wrap) & NIGHTMARE, (3 Channels, Double Straight Wrap) 
 
-For using: NIGHTMARE, (3 Channels)/
+For using: NIGHTMARE, (3 Channels)\
 use the line: channel_proc = ModalityProcessor2()
 
-For using: NIGHTMARE, (3 Channels, Double Cross Wrap)/
+For using: NIGHTMARE, (3 Channels, Double Cross Wrap)\
 use the line: channel_proc = ModalityProcessor3()
 
-For using: NIGHTMARE, (3 Channels, Double Straight Wrap)/
+For using: NIGHTMARE, (3 Channels, Double Straight Wrap)\
 use the line: channel_proc = ModalityProcessor7()
 
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
@@ -107,13 +107,13 @@ The files can be used without additional steps according to the job files in the
 
 ### NIGHTMARE, (2 Channels, Plus of Text Features) & NIGHTMARE, (3 Channels, Text Channels Gate) & NIGHTMARE, (3 Channels, Text Channels Bilinear)
 
-For using: NIGHTMARE, (2 Channels, Plus of Text Features)/
+For using: NIGHTMARE, (2 Channels, Plus of Text Features)\
 use the line: channel_proc = ModalityProcessor4()
 
-For using: NIGHTMARE, (3 Channels, Text Channels Gate)/
+For using: NIGHTMARE, (3 Channels, Text Channels Gate)\
 use the line: channel_proc = ModalityProcessor5()
 
-For using: NIGHTMARE, (3 Channels, Text Channels Bilinear)/
+For using: NIGHTMARE, (3 Channels, Text Channels Bilinear)\
 use the line: channel_proc = ModalityProcessor6()
 
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
