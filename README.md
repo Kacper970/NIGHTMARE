@@ -1,4 +1,4 @@
-# Thesis
+# NIGHTMARE
 
 In the folder **train_and_evaluate** all the necessary code to train and evaluate models can be found.
 
