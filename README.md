@@ -1,6 +1,6 @@
 # NIGHTMARE
 
-This is my graduation thesis in which I develop the model **NIGHTMARE** for generating comic book representations.
+## This is my graduation thesis in which I develop the model **NIGHTMARE** for generating comic book representations.
 
 In the folder **train_and_evaluate** all the necessary code to train and evaluate models can be found.
 
