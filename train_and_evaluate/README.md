@@ -18,22 +18,22 @@ The files can be used without additional steps according to the job files in the
 The files can be used without additional steps according to the job files in the folder Example_JOBS_Snellius.
 
 
-### ASTERX (Multimodal, Element-wise +) 
+### NIGHTMARE (Element-wise +) 
 
 The files can be used without additional steps according to the job files in the folder Example_JOBS_Snellius.
 
 
-### ASTERX (Multimodal, Concatenation)
+### NIGHTMARE (Concatenation)
 
 The files can be used without additional steps according to the job files in the folder Example_JOBS_Snellius.
 
 
-### ASTERX (Multimodal, Combiner) & ASTERX (Multimodal, FNN-Based)  
+### NIGHTMARE (Combiner) & NIGHTMARE (FNN-Based)  
 
-For using ASTERX (Multimodal, Combiner):\
+For using NIGHTMARE (Combiner):\
 use the line: combiner = SequenceCombiner(384, 768, 384) and comment out: combiner = Combinerpaper(384, 768, 384)
   
-For using ASTERX (Multimodal, FNN-Based):\
+For using NIGHTMARE (FNN-Based):\
 use the line: combiner = Combinerpaper(384, 768, 384) and comment out: combiner = SequenceCombiner(384, 768, 384)
 
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
@@ -119,7 +119,7 @@ use the line: channel_proc = ModalityProcessor6()
 The changes need to be done in the files training.py and evaluation_retrieval.py, keep in mind to select the right checkpoint.
 
 
-### ASTERX (Multimodal → Image Only, Element Wise +) 
+### NIGHTMARE (Multimodal → Image Only, Element Wise +) 
 
 The files can be used without additional steps according to the job files in the folder Example_JOBS_Snellius.
 
