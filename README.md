@@ -10,7 +10,8 @@ The checkpoints and already generated data files can be downloaded from a google
 
 https://drive.google.com/drive/folders/1Uoo_w4k2zFH9PbidJIjL3lKZklMWIljL?usp=drive_link
 
-The thesis pdf can be read for better understanding, it is the pdf with the following name:\ **Master_Thesis_AI_Kacper_Bartosik_12624268.pdf** (TO BE ADDED)
+The thesis pdf can be read for better understanding, it is the pdf with the following name: \ 
+**Master_Thesis_AI_Kacper_Bartosik_12624268.pdf** (TO BE ADDED)
 
 \
 \
