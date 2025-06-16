@@ -91,7 +91,8 @@ def process_dir(path, name, writer, lookupdict, number_storage=None):
         )
         for i, img in enumerate(img_list):
             grp["img_data"][i] = np.frombuffer(img, dtype="uint8")
-                   
+
+    # Use this when using the text with a split in narration en dialogue
     if (len(img_list) > 0):
         path_index["str_data"] = img_idx
         dt = h5py.special_dtype(vlen=str)
@@ -113,7 +114,23 @@ def process_dir(path, name, writer, lookupdict, number_storage=None):
             
             key2 = (int(split_string[0]), int(split_string[1]), int(number_storage), 2)
             grp["str_data2"][i] = lookupdict.get(key2, '')
-         
+
+    # Use this when using all the text combined
+    # if (len(img_list) > 0):
+    #     path_index["str_data"] = img_idx
+    #     dt = h5py.special_dtype(vlen=str)
+    #     grp.create_dataset(
+    #         "str_data",
+    #         (len(img_list),),
+    #         dtype=dt,
+    #     )
+    #     for i, img_num in enumerate(img_idx):
+            
+    #         split_string = img_num.split('_')
+    #         key = (int(split_string[0]), int(split_string[1]), int(number_storage))
+    #         grp["str_data"][i] = lookupdict.get(key, '')
+        
+    
     return path_index
 
 
