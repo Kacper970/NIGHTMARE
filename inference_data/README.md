@@ -16,7 +16,7 @@ The following files need to be present but don't have to be changed/used: **util
 
 The **export_metainfo.py** can be run to generate the meta information needed for the other functions/files that will follow below. This needs to be run for the train, val and test folders of the data. 
 
-The **create_hdf5.py** can be run to generate hdf5 files for the folders with the data. This needs to be run for the train, val and test folders of the data. 
+The **create_hdf5.py** can be run to generate hdf5 files for the folders with the data. This needs to be run for the train, val and test folders of the data. There is a cell that needs to be uncommented when working with all text combined.
 
 The **inference.py** can be run to inference the embeddings from the hdf5 files. In order to switch between Clip and Bert/Dino embeddings the changes need to be made in lines: 20-26 and 148-156.
 
